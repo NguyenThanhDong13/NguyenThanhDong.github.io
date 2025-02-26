@@ -276,6 +276,73 @@ ul li {
     display: block; /* Tránh khoảng trống dưới ảnh */
     margin-left: 0; /* Đảm bảo ảnh bám sát lề trái */
 }
+/* HERO (BANNER) */
+.hero {
+    position: relative;
+    height: 300px; /* Chiều cao của banner */
+    background: url('Image/br1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* Ảnh đại diện góc trái */
+.hero-avatar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;  /* Điều chỉnh kích thước ảnh */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Nội dung hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/* Nút tải CV */
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+.download-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
 
 
 
